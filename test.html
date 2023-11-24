@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropdown Menu</title>
+  <link rel="stylesheet" >
+  <style>
+    /* CSS */
+/* Định dạng các phần tử trong menu dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Định dạng nút trên menu dropdown */
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Định dạng các mục menu bên dưới */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Hiển thị các mục menu khi lớp "show" được thêm vào */
+.show {
+  display: block;
+}
+
+/* Định dạng các mục menu bên dưới */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Định dạng các mục menu khi di chuột qua */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+  </style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button onclick="toggleMenu()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Item 1</a>
+    <a href="#">Item 2</a>
+    <a href="#">Item 3</a>
+    <!-- Thêm các mục menu khác nếu cần -->
+  </div>
+</div>
+
+<script>
+function toggleMenu() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>

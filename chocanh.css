@@ -1,0 +1,192 @@
+body{
+    margin: 0 auto;
+    background-color: #efeeee;
+    width: 1440px;
+
+}
+.page {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #efeeee;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+header .header1 {
+    background: #BA0001;
+    display: flex;
+    width: 100%;
+    height: 117px;
+    position: relative;
+}
+
+header .header1 img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 8px;
+    left: 20px;
+
+}
+
+header .header1 h2 {
+    font-family: 'Roboto';
+    position: absolute;
+    margin-left: 130px;
+    top: 16px;
+    font-size: xx-large;
+    color: #D9D9D9;
+}
+
+header .header1 .search {
+    position: absolute;
+    left: 440px;
+    top: 33px;
+    display: flex;
+}
+
+header .header1 .search input {
+    width: 402px;
+    height: 45px;
+    border: white;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+}
+
+header .header1 .search div {
+    display: flex;
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    width: 53px;
+    /* Chiều rộng của div cha */
+    height: 47px;
+    background-color: #FDE774;
+    color: #909090;
+    border-radius: 0px 10px 10px 0px;
+}
+
+header .header1 #dn input {
+    background-color: #FDE774;
+    font-size: 18px;
+    color: #909090;
+    width: 120px;
+    height: 40px;
+    position: relative;
+    left: 1070px;
+    outline: none;
+    border-radius: 10px;
+    top: 38px;
+}
+
+header .header1 #dk input {
+    background-color: #FDE774;
+    font-size: 18px;
+    color: #909090;
+    width: 120px;
+    height: 40px;
+    position: relative;
+    left: 820px;
+    outline: none;
+    border-radius: 10px;
+    top: 38px;
+}
+
+header .header1 .user {
+    position: absolute;
+    left: 1270px;
+    top: 25px;
+    color: #D9D9D9;
+    display: flex;
+    /* Sử dụng flexbox */
+    flex-direction: column;
+}
+
+header .header1 .user a {
+    margin: 10px 0px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: azure;
+}
+
+header .menu {
+    display: flex;
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    height: 100px;
+    background-color: #efeeee;
+}
+
+header .menu ul {
+    display: flex;
+}
+
+header .menu ul li {
+    margin: 0px 25px;
+    list-style-type: none;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+header .menu .giohang {
+    background-color: #c2c2c2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px 0px 150px;
+}
+main{
+    width: 980px;
+    margin: 0 auto;
+}
+main img{
+    margin-left: 150px;
+}
+.form input{
+    height: 50px;
+    width: 980px;
+}
+.form select{
+    height: 50px;
+    width: 980px;
+    font-size: 20px;
+}
+.form textarea{
+    width: 980px;
+}
+button{
+    margin-bottom: 100px;
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: rgb(202, 141, 141);
+}
+p{
+    font-size: 20px;
+}

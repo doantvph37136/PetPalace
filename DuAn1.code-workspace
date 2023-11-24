@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "DuAn1",
+			"path": "."
+		},
+		{
+			"name": "upload",
+			"path": "duan1/upload"
+		},
+		{
+			"name": "modol",
+			"path": "duan1/modol"
+		},
+		{
+			"name": "admin",
+			"path": "duan1/admin"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DuAn1"
+	}
+}
